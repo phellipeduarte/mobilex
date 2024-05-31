@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Button } from './components/Button';
+import { Button, ButtonSize, ButtonType } from './components/Button';
 
 export default function Home() {
 
@@ -11,8 +11,8 @@ export default function Home() {
           </p>
           <p className="text-xl text-gray-400 max-w-screen-md">Explore smartphones de última geração, acessórios modernos e gadgets inovadores. Descubra produtos exclusivos e ofertas especiais para encontrar a tecnologia perfeita para você</p>
           <div className="flex flex-col gap-2 py-4 md:flex-row">
-            <Button text="Comprar" to="/marketplace" />
-            <Button text="Saiba Mais" to="/marketplace" />
+            <Button text="Comprar" to="/marketplace" size={ButtonSize.lg} type={ButtonType.main} />
+            <Button text="Saiba Mais" to="/marketplace" size={ButtonSize.lg} type={ButtonType.secondary} />
           </div>
         </div>
         <div className="flex justify-end pt-12 md:pt-24">

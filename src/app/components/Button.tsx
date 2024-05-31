@@ -2,11 +2,24 @@ import React from 'react'
 
 interface ButtonProps {
     text: string;
-    to: string
+    to: string;
+    size: ButtonSize;
+    type: ButtonType
+}
+
+export enum ButtonSize {
+    sm = " py-2 px-5 text-sm",
+    md = " py-3 px-12 text-lg",
+    lg = " py-4 px-24 text-lg",
+}
+
+export enum ButtonType {
+    main = " text-black bg-white hover:bg-zinc-200",
+    secondary = " text-white bg-black hover:bg-neutral-900"
 }
 
 export const Button = (props: ButtonProps) => {
     return (
-        <a type="button" className="transition text-black bg-white focus:text-white focus:bg-gray-400 focus:ring-4 focus:outline-none focus:ring-white font-medium rounded text-sm px-4 py-2 text-center hover:text-white hover:bg-gray-400" href={props.to}>{props.text}</a>
+        <a type="button" className={"transition duration-300 text-center uppercase rounded border border-white" + props.size + props.type} href={props.to} > {props.text}</a >
     )
 }
