@@ -9,7 +9,7 @@ interface NavItemProps {
 export const NavItem = (props: NavItemProps) => {
     return (
         <li>
-            <a href={props.to} className="transition block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-gray-700 dark:text-white dark:hover:bg-green-600 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">{props.text}</a>
+            <a href={props.to} className="transition block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-gray-700 dark:text-white dark:hover:bg-white dark:hover:text-black dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">{props.text}</a>
         </li>
     )
 }
