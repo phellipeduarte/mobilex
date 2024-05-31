@@ -7,6 +7,6 @@ interface ButtonProps {
 
 export const Button = (props: ButtonProps) => {
     return (
-        <button type="button" className="transition text-black bg-white focus:text-white focus:bg-gray-400 focus:ring-4 focus:outline-none focus:ring-white font-medium rounded text-sm px-4 py-2 text-center hover:text-white hover:bg-gray-400">{props.text}</button>
+        <a type="button" className="transition text-black bg-white focus:text-white focus:bg-gray-400 focus:ring-4 focus:outline-none focus:ring-white font-medium rounded text-sm px-4 py-2 text-center hover:text-white hover:bg-gray-400" href={props.to}>{props.text}</a>
     )
 }
