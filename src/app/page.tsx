@@ -15,9 +15,9 @@ export default function Home() {
             <Button text="Saiba Mais" to="/marketplace" size={ButtonSize.lg} type={ButtonType.secondary} />
           </div>
         </div>
-        <div className="flex justify-end pt-12 md:pt-24">
+        <div className="flex justify-end py-12 md:pt-24">
           <Image
-            src="https://i.postimg.cc/RhxC3B5n/iphone.png"
+            src="https://i.postimg.cc/N0pCxbZ0/iphone15.png"
             width={900}
             height={150}
             alt="iphones"
