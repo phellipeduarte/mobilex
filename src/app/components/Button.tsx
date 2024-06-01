@@ -14,12 +14,12 @@ export enum ButtonSize {
 }
 
 export enum ButtonType {
-    main = " text-black bg-white hover:bg-zinc-200",
-    secondary = " text-white bg-black hover:bg-neutral-900"
+    main = " text-white bg-black dark:text-black dark:bg-white hover:bg-zinc-200",
+    secondary = " text-black bg-white border border-black dark:text-white dark:bg-black hover:bg-neutral-900"
 }
 
 export const Button = (props: ButtonProps) => {
     return (
-        <a type="button" className={"transition duration-300 text-center uppercase rounded border border-white" + props.size + props.type} href={props.to} > {props.text}</a >
+        <a type="button" className={"transition duration-300 text-center uppercase rounded border dark:border-white" + props.size + props.type} href={props.to} > {props.text}</a >
     )
 }
