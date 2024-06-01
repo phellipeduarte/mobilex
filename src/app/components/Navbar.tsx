@@ -36,7 +36,7 @@ export const Navbar = () => {
                 <div className="justify-self-end items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
                     <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-black dark:border-gray-700">
                         <NavItem text="Home" to="/" />
-                        <NavItem text="About" to="/" />
+                        <NavItem text="Sobre" to="/sobre" />
                         <div className="hidden md:block">
                             <Button text="Comprar" to="/marketplace" size={ButtonSize.sm} type={ButtonType.main} />
                         </div>
